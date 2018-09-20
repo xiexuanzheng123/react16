@@ -1,7 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
-import Game from './containers/Game';
+import Game from './containers/game/Game';
 import registerServiceWorker from './registerServiceWorker';
 
 ReactDOM.render(
