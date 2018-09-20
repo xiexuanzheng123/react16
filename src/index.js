@@ -1,11 +1,12 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
-import Game from './containers/game/Game';
+import Clock from './containers/clock/Clock';
 import registerServiceWorker from './registerServiceWorker';
 
 ReactDOM.render(
-    <Game />, 
+    <Clock />, 
     document.getElementById('root')
 );
+
 registerServiceWorker();
