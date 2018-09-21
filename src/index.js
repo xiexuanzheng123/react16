@@ -1,11 +1,11 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
-import Toggle from './containers/demo/Toggle';
 import registerServiceWorker from './registerServiceWorker';
+import LoginControl from './containers/demo/LoginControl';
 
 ReactDOM.render(
-    <Toggle />, 
+    <LoginControl />, 
     document.getElementById('root')
 );
 
