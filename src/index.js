@@ -2,15 +2,10 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
 import registerServiceWorker from './registerServiceWorker';
-import Calculator from './containers/hoist/Calculator';
-
-const posts = [
-    {id: 1, title: 'Hello World', content: 'Welcome to learning React!'},
-    {id: 2, title: 'Installation', content: 'You can install React from npm.'}
-  ];
+import WelcomeDialog from './containers/relation/WelcomeDialog';
 
 ReactDOM.render(
-    <Calculator />, 
+    <WelcomeDialog />, 
     document.getElementById('root')
 );
 
