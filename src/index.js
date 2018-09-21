@@ -2,7 +2,7 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
 import registerServiceWorker from './registerServiceWorker';
-import Blog from './containers/demo/Blog';
+import NameForm from './containers/form/NameForm';
 
 const posts = [
     {id: 1, title: 'Hello World', content: 'Welcome to learning React!'},
@@ -10,7 +10,7 @@ const posts = [
   ];
 
 ReactDOM.render(
-    <Blog posts={posts}/>, 
+    <NameForm posts={posts}/>, 
     document.getElementById('root')
 );
 
