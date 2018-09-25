@@ -39,4 +39,18 @@
     子组件可以通过props.children将获取父元素传来的组件
 
     {showHeader && <Header />}添加渲染
+    
+    创建Refs，通过ref属性来获得React元素，
+    当一个ref属性被传递给一个render函数中的元素时，可以使用ref中的current属性对节点的引用进行访问
+    ref的值取决于节点的类型：
+    1 当ref属性被用于一个普通的HTML元素时，React.createRef()将接受底层DOM元素作为他的current属性以创建ref
+    2 当ref属性被用于自定义类的组件时候，ref对象将接受 该组件已挂载的实例作为它的current
+    3 不能再函数式的组件上使用ref，以为它没有实例
+
+    React会在组件加载时将DOM元素传入current属性，在卸载时改为null。
+    ref的更新发生在componentDidMount或componentDidUpdate生命周期钩子之前
+    函数式组建不可以使用ref
+    从父组件访问子节点的DOM节点，不建议，组件实例不是DOM节点
+    ref转发：Ref转发使组件可以像暴露自己的ref一样暴露子组件的ref，不推荐findDOMNode()
+    回调Refs
  */
