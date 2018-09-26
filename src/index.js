@@ -2,10 +2,10 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
 import registerServiceWorker from './registerServiceWorker';
-import SayHello from '../src/containers/optimize/SayHello';
+import App from '../src/containers/coup/app';
 
 ReactDOM.render(
-    <SayHello />, 
+    <App />, 
     document.getElementById('root')
 );
 
