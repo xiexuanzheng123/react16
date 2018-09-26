@@ -53,4 +53,21 @@
     从父组件访问子节点的DOM节点，不建议，组件实例不是DOM节点
     ref转发：Ref转发使组件可以像暴露自己的ref一样暴露子组件的ref，不推荐findDOMNode()
     回调Refs
+
+    react在内部使用几种巧妙的技术来最小化DOM操作的数量，
+    React在渲染出的UI内部建立和维护了一个内层的实现方式，它包括了从组件返回的React元素
+    shouldComponentUpdate可以提升速度，它是在重新渲染过程开始前触发的
+
+    React提供了一个辅助对象来实现浅比较的逻辑，继承自React.PureComponent
+    大部分情况下，可以使用React.PureComponent而不必自己写shouldComponentUpdate
+    Object.assign({}, prev, {});
+    {...prev, key: value}
+    getDefaultProps()
+    getInialState()
+
+    解决将一棵树转换为另一棵树的最小操作数算法问题的通用方案，树中元素个数为n，最先进的算法的时间复杂度为O(ne3)
+    根节点不同，根节点下面所有的组件都会被卸载，状态也会被销毁
+    如果key设置为索引，有时候会降低渲染速度
+    Context通过组件提供了一个传递数据的方法，从而避免了通过每一级手动传递props的方式
+    context设计的目的是为了共享那些被认为对于一个组件树来说是全局的属性
  */

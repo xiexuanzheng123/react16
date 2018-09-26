@@ -2,10 +2,10 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
 import registerServiceWorker from './registerServiceWorker';
-import CustomTextInput from '../src/containers/refs/CallbackRef';
+import SayHello from '../src/containers/optimize/SayHello';
 
 ReactDOM.render(
-    <CustomTextInput />, 
+    <SayHello />, 
     document.getElementById('root')
 );
 
