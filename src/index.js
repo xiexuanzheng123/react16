@@ -2,10 +2,10 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
 import registerServiceWorker from './registerServiceWorker';
-import Table from '../src/containers/fragments/Table';
+import App from '../src/containers/error/App';
 
 ReactDOM.render(
-    <Table />, 
+    <App />, 
     document.getElementById('root')
 );
 
