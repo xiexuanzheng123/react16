@@ -2,10 +2,10 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
 import registerServiceWorker from './registerServiceWorker';
-import App from '../src/containers/error/App';
+import HelloMessage from '../src/containers/webComponent/HelloMessage';
 
 ReactDOM.render(
-    <App />, 
+    <HelloMessage name={123}/>, 
     document.getElementById('root')
 );
 
